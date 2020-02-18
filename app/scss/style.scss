@@ -342,8 +342,44 @@
 .icosvg-3 {
 	svg {width: 72px; }
 }
-
-
+//======================== author =======================
+.author {
+	background-image: url(../images/author-bg.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 750px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	&__box {
+		max-width: 654px;
+		width: 100%;
+		min-height: 215px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: $green;		
+	}
+	&__title {
+		font-size: 30px;
+		line-height: 36px;
+		color: #ffffff;
+		max-width: 264px;
+		margin-right: 45px;
+		span {
+			font-weight: 700;
+		}
+	}
+	&__link {
+		font-size: 18px;
+		line-height: 36px;
+		color: $bg; 
+		padding: 14px 40px;
+		background-color: #ffffff;		
+		max-width: 225px;
+	}
+}
 
 
 
