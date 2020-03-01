@@ -25,7 +25,8 @@ body {
 	font-size: 15px;
 	font-weight: 400;
 	line-height: 24px;
-	color: $text;	
+	color: $text;
+	overflow-x: hidden;	
 }
 
 
@@ -70,6 +71,15 @@ body {
 	display: inline-block;
 	margin-right: 13px;
 }
-// .breadcrumbs {
-	
-// }
+.angle-right {
+	position: relative;
+	padding-left: 15px;
+	&::before {
+		content: "\f105";
+		font-family: 'icomoon';
+		position: absolute;
+		left: 0;
+		color: $green;
+		font-size: 14px;
+	}
+}

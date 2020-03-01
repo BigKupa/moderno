@@ -26,7 +26,8 @@ gulp.task('browser-sync', function() {
 	browserSync.init({
 			server: {
 					baseDir: "app/"
-			}
+			},
+			browser: "C:/Program Files/Firefox Developer Edition/firefox.exe"
 	});
 });
 gulp.task('html', function(){
