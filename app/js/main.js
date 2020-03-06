@@ -35,5 +35,14 @@ $(function(){
 	$('.header__btn-menu').on('click',function(){
 		$('.header__box').toggleClass('active');
 	});
+
+	$('.product-one__tabs .tab').on('click', function(event) {
+		var id = $(this).attr('data-id');
+			$('.product-one__tabs').find('.tab-item').removeClass('active-tab').hide();
+			$('.product-one__tabs .tabs').find('.tab').removeClass('tab-active');
+			$(this).addClass('tab-active');
+			$('#'+id).addClass('active-tab').fadeIn();
+			return false;
+		});
 	var mixer = mixitup('.products__inner-box');
 });
